@@ -1,0 +1,19 @@
+{% extends 'CORE/base.html' %} {% block content %}
+
+<section class="sec_home1" data-image-width="1920" data-image-height="1080">
+  <div class="container">
+    <br>
+    <h2>Welcome 2 </h2>
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;<strong style="color: blue;">OrangePower</strong><i style="color: orange;">BlueStore</i>
+
+    {% if request.user.is_authenticated %}
+    <hr>
+    <div class="container">
+      <h5>{{ user.username | upper }}, Welcome!</h5>
+      <br>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{% endblock %}
